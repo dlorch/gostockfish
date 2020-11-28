@@ -1,11 +1,10 @@
-package main
+package gostockfish
 
 import (
 	"bufio"
 	"errors"
 	"fmt"
 	"io"
-	"log"
 	"math/rand"
 	"os/exec"
 	"regexp"
@@ -320,15 +319,4 @@ func ParseBestMove(line string) (*BestMove, error) {
 		Move:   splitText[1],
 		Ponder: ponder,
 	}, nil
-}
-
-func main() {
-	engine, err := NewEngine()
-	if err != nil {
-		log.Fatal(err)
-	}
-	err = engine.NewGame()
-	if err != nil {
-		log.Fatal(err)
-	}
 }
