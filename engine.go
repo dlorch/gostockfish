@@ -213,7 +213,6 @@ func (engine *Engine) BestMove() (*BestMove, error) {
 			return nil, err
 		}
 		line := strings.TrimSpace(string(text))
-		fmt.Println(">>>" + line)
 		splitText := strings.Split(line, " ")
 		if splitText[0] == "info" {
 			lastInfo, err = ParseInfo(line)
