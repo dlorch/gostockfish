@@ -118,15 +118,14 @@ func NewEngineWithAllOptions(stockfishExecutable string, depth int, ponder bool,
 	}
 
 	baseParam := map[string]string{
-		"Debug Log File": "false",
-		"Contempt":       "0",
-		"Threads":        "1",
-		"Hash":           "16",
-		"MultiPV":        "1",
-		"Skill Level":    "20",
-		"Move Overhead":  "30",
-		"Slow Mover":     "80",
-		"UCI_Chess960":   "false",
+		"Contempt":      "0",
+		"Threads":       "1",
+		"Hash":          "16",
+		"MultiPV":       "1",
+		"Skill Level":   "20",
+		"Move Overhead": "30",
+		"Slow Mover":    "80",
+		"UCI_Chess960":  "false",
 	}
 
 	if random {
