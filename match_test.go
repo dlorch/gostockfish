@@ -25,7 +25,7 @@ func TestQuickCheckmate(t *testing.T) {
 
 	m.Run()
 
-	if m.Winner != "e1" && m.Winner != "e2" && m.Winner != "" {
-		t.Fatalf("Expected winner \"e1\", \"e2\" or \"\" (draw), got \"%s\"", m.Winner)
+	if m.Winner != "e1" && m.Winner != "e2" {
+		t.Fatalf("Expected winner \"e1\" or \"e2\", got \"%s\"", m.Winner)
 	}
 }
